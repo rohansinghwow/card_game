@@ -51,12 +51,7 @@ drawCardBtn.addEventListener("click", () => {
         })
 })
 
-/**
- * Challenge:
- * 
- * Display the final winner in the header at the top by
- * replacing the text of the h2.
- */
+
 
 function determineCardWinner(card1, card2) {
     const valueOptions = ["2", "3", "4", "5", "6", "7", "8", "9", 
