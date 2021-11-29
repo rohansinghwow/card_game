@@ -1,22 +1,46 @@
+<!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="top">
-            <button id="new-deck">New Deck</button>
-            <p id="remaining"></p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Card War Game</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="container">
+
+        <div class="card-count">
+            <span>Cards Left <span id="card-number">33</span></span>
         </div>
-        <h2 id="header">Game of War</h2>
-        <h3 id="computer-score">Computer score: 0</h3>
-        <div id="cards">
-            <div class="card-slot"></div>
-            <div class="card-slot"></div>
-        </div>
-        <h3 id="my-score">My score: 0</h3>
-        <button id="draw-cards" class="draw">Draw</button>
-        <script src="index.js"></script>
-    </body>
+
+        
+        <h3 id="header"></h3>
+        <span class="player-name">Computer</span>
+		<div class="cards" id="cards">
+            
+            <div class="card-single">
+
+                <span class="score-circle" id="cpu-score">
+                      0
+                </span>
+            </div>
+            <span class="player-name">You</span>
+            <div class="card-single">
+                <span class="score-circle" id="my-score">
+                      0
+                </span>
+            </div>
+            
+		</div>
+
+        <div class="buttons">
+            <button id="draw-cards">Draw Card</button>
+            <button id="new-deck">New Game</button>
+            <button id="reset-btn">Reset</button>
+        
+        </div>    
+	</div>	
+
+</body>
+<script type="text/javascript" src="./index.js"></script>
 </html>
