@@ -1,6 +1,10 @@
+
+
+//Store DOM elements 
 let deckId
 let computerScore = 0
 let myScore = 0
+
 const cardsContainer = document.getElementsByClassName("card-single")
 const newDeckBtn = document.getElementById("new-deck")
 const drawCardBtn = document.getElementById("draw-cards")
@@ -9,6 +13,38 @@ const remainingText = document.getElementById("card-number")
 const computerScoreEl = document.getElementById("cpu-score")
 const myScoreEl = document.getElementById("my-score")
 const resetBtn = document.getElementById('reset-btn')
+
+
+/** 
+              1. handleClick() function 
+                        - executed by default when the page loads
+                        - ask the server for the array of cards 
+                        - server limit is set to 52 
+                        - remaing card text = server limit
+                        - deck_id user for requesting card info
+
+
+              2. getDeck() function 
+                        - executed when drawCardBtn is clicked
+                        - ask the server for the card array of length 2
+                        - ?count=2 is provided in the request 
+                        - card container background-image is set to card image
+                        - card 1 is selected using array[0] and card 2 using array[1]
+
+
+              3. determineCardWinner() functon 
+                        - executed inside handClick() function
+                        - myScore and computerScore is compared for winner and looser
+                        - if both equals its a tie
+
+
+              3. reset() functon 
+                        - executed when resetBtn is clicked
+                        - refreshes the page without reloding the page
+                        - All the data of API is removed because of refresh
+                        - custom refresh does same thing  
+**/
+
 
 function handleClick() {
     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
@@ -21,7 +57,7 @@ function handleClick() {
         })
 }
 
-newDeckBtn.addEventListener("click", handleClick)
+
 
 function getDeck(){
 
@@ -78,3 +114,6 @@ function determineCardWinner(card1, card2) {
     }
 }
 
+
+
+handleClick()
