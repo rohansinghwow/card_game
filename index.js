@@ -69,7 +69,7 @@ function getDeck(){
             cardsContainer[1].style.backgroundImage = `url(${data.cards[1].image})`;
             
             const winnerText = determineCardWinner(data.cards[0], data.cards[1])
-            header.textContent = `This round won by ${winnerText}`
+            header.textContent = `${winnerText}`
             
             if (data.remaining === 0) {
                 drawCardBtn.disabled = true
@@ -104,11 +104,11 @@ function determineCardWinner(card1, card2) {
     if (card1ValueIndex > card2ValueIndex) {
         computerScore+=10
         computerScoreEl.textContent = `${computerScore}`
-        return "Computer wins!"
+        return "Computer won this round !"
     } else if (card1ValueIndex < card2ValueIndex) {
         myScore+=10
         myScoreEl.textContent = `${myScore}`
-        return "You win!"
+        return "You won this round !"
     } else {
         return "War!"
     }
