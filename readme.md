@@ -27,6 +27,7 @@
 ## Acknowledgement
  - The project is made after watching Scrimba tutorials and is heavily modified
  - Figma is used for UI/UX design
+ -  UI has been updated and improved by Mayur Dayal - https://github.com/mayurDayal2000
 
 ## Features
 
