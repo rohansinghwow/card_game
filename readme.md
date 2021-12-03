@@ -2,10 +2,9 @@
 # Game of War - Card Game
 
 
-![Alt text](https://siasky.net/MAACEuCTz_XcdBbWY9nd8eNTNqQtyuC3UufYgy8fmm3WAw?raw=true "Project Demo ")
-![Alt text](https://siasky.net/dADIYlhLWKefoLyDC_C-mp_VKhDCpKV9PC9qNIoEzMAdMw?raw=true "Project Demo ")
-
-![Alt text](https://siasky.net/dADirK6zwabRRnz1TLd1Wt31HC8iEv-tTFNWHO-_7VFJ5g?raw=true "Project Demo ")
+![Alt text](https://siasky.net/KADje3dAg_FmQKMF2RKFK9iVYv681RnYPMRkxDhzpR4F_w?raw=true "Project Demo ")
+![Alt text](https://siasky.net/JABRKrJkLlxQiSBCwKxzbgXG7oZwXTU4beBZ5vVhRjAOIQ?raw=true "Project Demo ")
+![Alt text](https://siasky.net/VABEi8IKQKjfWe0reLON5Qfr-W_ur4fCZVOixW9ftTmhZg?raw=true "Project Demo ")
 
 
 
